@@ -69,12 +69,12 @@ public class robot : Agent
     }
 
 
-    public override void Heuristic(float[] actionsOut)
-    {
+    //public override void Heuristic(float[] actionsOut)
+    //{
         //提供開發者控制的方式
-        var action = new float[2];
-        actionsOut[0] = Input.GetAxis("Horizontal");
-        actionsOut[1] = Input.GetAxis("Vertical");
-    }
+        //var action = new float[2];
+        //actionsOut[0] = Input.GetAxis("Horizontal");
+        //actionsOut[1] = Input.GetAxis("Vertical");
+    //}
 
 }
