@@ -357,7 +357,7 @@ MonoBehaviour:
   agentParameters:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
-  maxStep: 0
+  MaxStep: 0
   speed: 10
 --- !u!114 &1038497656
 MonoBehaviour:
@@ -372,11 +372,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BrainParameters:
-    vectorObservationSize: 10
-    numStackedVectorObservations: 1
-    vectorActionSize: 02000000
-    vectorActionDescriptions: []
-    vectorActionSpaceType: 1
+    VectorObservationSize: 10
+    NumStackedVectorObservations: 1
+    VectorActionSize: 02000000
+    VectorActionDescriptions: []
+    VectorActionSpaceType: 1
   m_Model: {fileID: 5022602860645237092, guid: 395a3a3ee39f1d2459803b7533aa1abb, type: 3}
   m_InferenceDevice: 0
   m_BehaviorType: 0
@@ -411,7 +411,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 112
+  m_Constraints: 48
   m_CollisionDetection: 0
 --- !u!114 &1038497659
 MonoBehaviour:
@@ -427,7 +427,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DecisionPeriod: 10
   TakeActionsBetweenDecisions: 1
-  offsetStep: 0
 --- !u!1 &1355771779
 GameObject:
   m_ObjectHideFlags: 0
