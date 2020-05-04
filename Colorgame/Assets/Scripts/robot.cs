@@ -24,12 +24,12 @@ public class robot : Agent
         rigrobot.angularVelocity = Vector3.zero;
 
         //隨機機器人初始位置
-        Vector3 posrobot = new Vector3(Random.Range(-2f, 2f), 0.05f, Random.Range(-2f, 2f));
+        Vector3 posrobot = new Vector3(Random.Range(-2f, 2f), 1f, Random.Range(-2f, 2f));
         transform.position = posrobot;
         //隨機顏色初始位置
-        Vector3 posblue = new Vector3(Random.Range(-3.0f, 2f), 0.05f, Random.Range(-3.0f, 2f));
+        Vector3 posblue = new Vector3(Random.Range(-2f, 2f), 1.29f, Random.Range(-2f, 2f));
         rigblue.position = posblue;
-        Vector3 posred = new Vector3(Random.Range(-3.0f, 2f), 0.05f, Random.Range(-3.0f, 2f));
+        Vector3 posred = new Vector3(Random.Range(-2f, 2f), 1.29f, Random.Range(-2f, 2f));
         rigred.position = posred;
 
         blue.complete = false;
@@ -69,13 +69,12 @@ public class robot : Agent
     }
 
 
-    public override float[] Heuristic()
+    public override void Heuristic(float[] actionsOut)
     {
         //提供開發者控制的方式
         var action = new float[2];
-        action[0] = Input.GetAxis("Horizontal");
-        action[1] = Input.GetAxis("Vertical");
-        return action;
+        actionsOut[0] = Input.GetAxis("Horizontal");
+        actionsOut[1] = Input.GetAxis("Vertical");
     }
 
 }
